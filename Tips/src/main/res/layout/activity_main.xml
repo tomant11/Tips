@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suma"
+        android:id="@+id/textView1"
+        android:layout_alignBaseline="@+id/editTextSuma"
+        android:layout_alignBottom="@+id/editTextSuma"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextSuma"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewKiek"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/editTextSuma"
+            android:layout_alignLeft="@+id/editTextSuma"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiek"
+            android:id="@+id/button"
+            android:layout_below="@+id/textViewKiek"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipsai"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/textViewKiek"
+            android:layout_alignLeft="@+id/textView1"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewGalut"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+</RelativeLayout>
